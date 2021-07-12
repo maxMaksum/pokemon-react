@@ -38,13 +38,13 @@ function App() {
   useMemo(()=>{
     if(text.length === 0){
       setFilteredPokemon([])
-      return
+      return 
     }
     setFilteredPokemon(()=>pokemon.newPokemon&&pokemon.newPokemon.filter((pokemon)=>pokemon.includes(text)))
 
   },[pokemon, text])
 
-  git
+  
   return (
     <Router>
       <div className="App">
